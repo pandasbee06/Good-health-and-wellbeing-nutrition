@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 48px 32px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-image: url("banner.png");
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 19.2px;
+            opacity: 0.95;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .meal-plan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        .meal-card {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 24px;
+            transition: all 0.3s;
+        }
+
+        .meal-card:hover {
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .meal-card h4 {
+            color: #764ba2;
+            margin-bottom: 16px;
+        }
+
+        .meal-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .meal-card li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 32px;
+            margin-top: 48px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="font-size: xxx-large; color: #000000;"> Dietitian & Co.</h1>
+        <p style="color: #333;">Your Diet's plot Twist</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="mealplan.html">Meal Plan</a></li>
+            <li><a href="form.html">Join Now</a></li>
+            <li><a href="sdg.html">SDG</a></li>
+        </ul>
+    </nav>
+
+    <section class="container mt-5 p-4 " id="meal-plan">
+        <h2>Sample Meal Plan</h2>
+        <p>Here's what a typical day looks like on our wellness challenge:</p>
+
+        <div class="meal-plan">
+            <div class="meal-card">
+                <h4>🌅 Breakfast (7:00 AM)</h4>
+                <ul>
+                    <li>Oatmeal with berries and almonds</li>
+                    <li>Greek yogurt with honey</li>
+                    <li>Green tea or black coffee</li>
+                    <li>Fresh orange juice</li>
+                </ul>
+                <p><strong>Calories:</strong> 450 | <strong>Protein:</strong> 18g</p>
+            </div>
+
+            <div class="meal-card">
+                <h4>🥪 Mid-Morning Snack (10:30 AM)</h4>
+                <ul>
+                    <li>Apple slices with almond butter</li>
+                    <li>Handful of mixed nuts</li>
+                    <li>Herbal tea</li>
+                </ul>
+                <p><strong>Calories:</strong> 200 | <strong>Protein:</strong> 6g</p>
+            </div>
+
+            <div class="meal-card">
+                <h4>🍽 Lunch (1:00 PM)</h4>
+                <ul>
+                    <li>Grilled chicken salad with olive oil</li>
+                    <li>Quinoa or brown rice</li>
+                    <li>Mixed vegetables</li>
+                    <li>Lemon water</li>
+                </ul>
+                <p><strong>Calories:</strong> 550 | <strong>Protein:</strong> 35g</p>
+            </div>
+
+            <div class="meal-card">
+                <h4>🥤 Afternoon Snack (4:00 PM)</h4>
+                <ul>
+                    <li>Hummus with carrot sticks</li>
+                    <li>Whole grain crackers</li>
+                    <li>Green smoothie</li>
+                </ul>
+                <p><strong>Calories:</strong> 180 | <strong>Protein:</strong> 8g</p>
+            </div>
+
+            <div class="meal-card">
+                <h4>🍲 Dinner (7:30 PM)</h4>
+                <ul>
+                    <li>Baked salmon with herbs</li>
+                    <li>Sweet potato</li>
+                    <li>Steamed broccoli and asparagus</li>
+                    <li>Side salad</li>
+                </ul>
+                <p><strong>Calories:</strong> 600 | <strong>Protein:</strong> 40g</p>
+            </div>
+
+            <div class="meal-card">
+                <h4>🌙 Evening Snack (9:00 PM)</h4>
+                <ul>
+                    <li>Chamomile tea</li>
+                    <li>Small bowl of berries</li>
+                    <li>Dark chocolate square (optional)</li>
+                </ul>
+                <p><strong>Calories:</strong> 120 | <strong>Protein:</strong> 2g</p>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 32px; font-weight: bold; color: #667eea;">
+            Total Daily: ~2,100 Calories | 109g Protein | Balanced Macros
+        </p>
+    </section>
+
+    </u>
+    <section style="text-align: center;"> <a href="#top" style="color: #000000; font-size: medium; ">🔝Back to Top</a>
+    </section>
+    <footer>
+        <h3>Contact Us</h3>
+        <p>📧 Email: support@wellnesschallenge.com</p>
+        <p>📱 Phone: +91 98765 43210</p>
+        <p>🌐 Website: www.wellnesschallenge.com</p>
+        <p style="margin-top: 32px; opacity: 0.8;">© 2025 Wellness Challenge. All rights reserved.</p>
+        <p style="opacity: 0.8;">Your health is your wealth. Let's build it together! 💪</p>
+    </footer>
+</body>
+
+</html>
